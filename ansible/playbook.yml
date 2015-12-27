@@ -1,0 +1,24 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    consul_version: 0.6.0
+    consul_is_server: true
+    consul_join_at_start: true
+    consul_servers: ['{{ fetch_consul_ip_address.stdout }}']
+    consul_client_address: "{{ ansible_default_ipv4['address'] }}"
+    consul_bind_address: "{{ ansible_default_ipv4['address'] }}"
+    consul_bootstrap_expect : "{{ fetch_consul_bootstrap_expect.stdout }}"
+    consul_node_name: "{{ ansible_default_ipv4['address'] }}"
+    consul_datacenter: "{{ fetch_consul_datacenter.stdout }}"
+
+    consul_atlas_infrastructure: "{{ fetch_atlas_name.stdout }}"
+    consul_atlas_token: "{{ fetch_atlas_token.stdout }}"
+    consul_atlas_join: true
+
+    consul_is_ui: true
+    consul_ui_server_name: "{{ fetch_public_host.stdout }}"
+
+  roles:
+    - init
+    - savagegus.consul

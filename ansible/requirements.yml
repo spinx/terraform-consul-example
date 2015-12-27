@@ -1,0 +1,4 @@
+---
+ - src: https://github.com/spinx/ansible-consul
+   version: master
+   name: savagegus.consul
