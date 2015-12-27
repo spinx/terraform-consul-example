@@ -3,9 +3,9 @@
 Ready to go Consul cluster. 
 
 ### Dependancies
-Terraform: https://terraform.io/downloads.html
-AWS CLI: http://docs.aws.amazon.com/cli/latest/userguide/installing.html
-Ansible: http://docs.ansible.com/intro_installation.html
+* Terraform: https://terraform.io/downloads.html
+* AWS CLI: http://docs.aws.amazon.com/cli/latest/userguide/installing.html
+* Ansible: http://docs.ansible.com/intro_installation.html
 
 ### Pull dependancies
 ```
