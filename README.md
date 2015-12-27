@@ -2,12 +2,12 @@
 
 Ready to go Consul cluster. 
 
-### Dependancies
+### Dependencies
 * Terraform: https://terraform.io/downloads.html
 * AWS CLI: http://docs.aws.amazon.com/cli/latest/userguide/installing.html
 * Ansible: http://docs.ansible.com/intro_installation.html
 
-### Pull dependancies
+### Pull dependencies
 ```
 make
 ansible-galaxy install -r requirements.yml
