@@ -1,6 +1,6 @@
 # terraform-consul-example
 
-Ready to go Consul cluster. 
+Ready to go Consul cluster. From https://medium.com/@spinx/terraforming-aws-setting-up-highly-available-consul-cluster-in-less-than-5min-d1a2524e5882#.t9q20zjey
 
 ### Dependencies
 * Terraform: https://terraform.io/downloads.html
